@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="js/toDo.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/toDo.css" />
     <script
       src="https://kit.fontawesome.com/be40533a82.js"
@@ -14,7 +20,7 @@
     <title>To do list</title>
   </head>
   <body>
-    <h1>My Task Board</h1>
+    <h1 class="">My Task Board</h1>
     <form action="javascript:addNote()" id="noteForm">
       <div class="container">
         <div class="inputsContainer">
@@ -27,10 +33,11 @@
           <br />
           <input type="date" id="noteDate" required />
           <input type="time" id="noteTime" required />
-          <button type="submit" class="btn btn-primary" id="submit">
+          <br />
+          <button type="submit" class="btn-sm btn-primary small" id="submit">
             Submit
           </button>
-          <button type="reset" class="btn btn-warning">Reset</button>
+          <button type="reset" class="btn-sm btn-warning">Reset</button>
         </div>
       </div>
     </form>
