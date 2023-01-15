@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="js/toDo.js"></script>
+    <link rel="stylesheet" href="css/toDo.css" />
+    <script
+      src="https://kit.fontawesome.com/be40533a82.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>To do list</title>
+  </head>
+  <body>
+    <h1>My Task Board</h1>
+    <form action="javascript:addNote()" id="noteForm">
+      <div class="container">
+        <div class="inputsContainer">
+          <input
+            type="text"
+            id="noteText"
+            placeholder="Description of task"
+            required
+          />
+          <br />
+          <input type="date" id="noteDate" required />
+          <input type="time" id="noteTime" required />
+          <button type="submit" class="btn btn-primary" id="submit">
+            Submit
+          </button>
+          <button type="reset" class="btn btn-warning">Reset</button>
+        </div>
+      </div>
+    </form>
+
+    <div id="notes"></div>
+  </body>
+</html>
