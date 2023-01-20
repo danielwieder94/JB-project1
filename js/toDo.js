@@ -8,11 +8,17 @@ const checkForData = () => {
   addNote();
 };
 
-const prettifyDate = () => {
-  var myDate = new Date(noteDate.value).toLocaleDateString();
-  var newDate = myDate.split("/");
-  return `${newDate[1]}/${newDate[0]}/${newDate[2]}`;
+Date.prototype.getNewDate = function () {
+  let myDate = this.toLocaleDateString(noteDate).split("/");
+  // myDate = myDate.split("/");
+  return `${myDate[1]}/${myDate[0]}/${myDate[2]}`;
 };
+
+// const prettifyDate = () => {
+//   let myDate = new Date(noteDate.value).toLocaleDateString();
+//   let newDate = myDate.split("/");
+//   return `${newDate[1]}/${newDate[0]}/${newDate[2]}`;
+// };
 
 const deleteItem = (element, newNote) => {
   element.remove();
@@ -47,7 +53,7 @@ const addNote = () => {
 
   const newNoteDate = document.createElement("div");
   newNoteDate.classList.add("date");
-  newNoteDate.innerHTML = prettifyDate(noteDate);
+  newNoteDate.innerHTML = `${getNewDate(this)}`;
   newNote.element.appendChild(newNoteDate);
 
   const newNoteTime = document.createElement("div");

@@ -55,11 +55,8 @@ h1 {
 }
 
 #notes {
-    /* display: flex;
+    display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    float: left; */
     margin-top: 200px;
     margin-left: 10px;
     height: 350px;
