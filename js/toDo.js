@@ -21,7 +21,6 @@ const insertData = () => {
     })
     .join("");
 };
-
 //delete note function
 const deleteItem = (element, index) => {
   element.parentNode.remove();
@@ -30,7 +29,6 @@ const deleteItem = (element, index) => {
 };
 
 insertData();
-
 const addNote = () => {
   const note = {
     noteText: document.getElementById("noteText").value,
