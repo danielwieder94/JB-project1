@@ -4,21 +4,17 @@
   -webkit-text-fill-color: #000;
   transition: background-color 5000s ease-in-out 0s;
 }
-
 body {
     text-align: center;
     background-image: url("media/tile.jpg");
 }
-
 h1 {
     font-family: 'Permanent Marker', cursive;
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 50px;
     text-align: center;
-
 }
-
 .formBg {
     width: 60%;
     height: 120px;
@@ -27,7 +23,6 @@ h1 {
     background-size: 50%;
     background-repeat: repeat;
 }
-
 .container {
     width: 100%;
     height: 100%;
@@ -35,7 +30,6 @@ h1 {
     text-align: center;
     /* transform: translate(-50%, -50%); */
 }
-
 .inputsContainer {
     background-image: url("media/formbg.jpg");
     width: 700px;
@@ -43,17 +37,14 @@ h1 {
     position: absolute;
     left: 200px;
 }
-
 .noteText, #noteText {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
-
 .date, .time {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
 }
-
 #notes {
     display: flex;
     flex-flow: row wrap;
@@ -61,7 +52,6 @@ h1 {
     margin-left: 10px;
     height: 350px;
 }
-
 #noteText {
    width: 90%;
    height: 35%;
@@ -72,14 +62,12 @@ h1 {
    margin-left: 70px;
    margin-top: 10px;
 }
-
 #noteText:focus {
     background: transparent;
     border: none;
     outline: none;
     color: #000;
 }
-
 /*Styles for the note img*/
 .note {
     display: block;
@@ -88,10 +76,14 @@ h1 {
     height: 300px;
     background-image: url("media/notebg.png");
     background-size: cover;
-    animation: fadeIn 1s;
-    
 }
-
+.new-note {
+    animation: fadeIn 0.5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 /*Styles for text in the note*/
 .note > .noteText {
     position: absolute;
@@ -99,7 +91,6 @@ h1 {
     left: 10px;
     width: 200px;
 }
-
 /*Styles for date and time in note*/
 .note > .date {
     box-sizing: border-box;
@@ -108,16 +99,13 @@ h1 {
     bottom: 30px;
     left: 10px;
 }
-
 .note > .time {
     box-sizing: border-box;
     box-shadow: inset 0px 0px 100px 5px rgb(255, 236, 112);
     position: absolute;
     bottom: 10px;
     left: 10px;
-    
 }
-
 .note > .textWrap {
     position: absolute;
     top: 50px;
@@ -130,12 +118,12 @@ h1 {
     box-sizing: border-box;
     padding: 5px;
 }
-
 .deleteNote {
+    width: 25px;
     display: none;
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: 25px;
+    right: 30px;
     background: transparent;
     border: none;
 }
@@ -144,20 +132,12 @@ h1 {
     border-radius: 20%;
     background-color: rgb(255, 236, 112);
 }
-
 .note:hover > .deleteNote {
     display: inline;
 }
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 input, button {
     margin-top: 10px;
 }
-
 input:focus, button:focus {
     border: none;
 }
