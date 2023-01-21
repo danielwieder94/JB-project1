@@ -22,6 +22,7 @@ const insertData = () => {
     .join("");
 };
 
+//delete note function
 const deleteItem = (element, index) => {
   element.parentNode.remove();
   noteArray.splice(index, 1);
