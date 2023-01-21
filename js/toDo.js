@@ -21,7 +21,7 @@ const insertData = () => {
       <div class="time">${item.noteTime}</div>
     </div>`;
     })
-    .join("");
+    .join(""); //to make sure all array elements will show. without join.("") it would show only the first element of the array
 };
 //delete note function
 const deleteItem = (element, index) => {
