@@ -1,7 +1,9 @@
 let noteArray = JSON.parse(localStorage.getItem("noteData")) || [];
 
 const prettifyDate = (noteDate) => {
-  return new Date(noteDate).toLocaleDateString();
+  newDate = new Date(noteDate).toLocaleDateString();
+  myDate = newDate.split("/");
+  return `${myDate[1]}/${myDate[0]}/${myDate[2]}`;
 };
 
 const insertData = () => {
