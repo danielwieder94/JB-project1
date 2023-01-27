@@ -16,17 +16,15 @@ h1 {
     text-align: center;
 }
 .formBg {
-    width: 60%;
-    height: 120px;
-    margin: 0 auto;
-    position: relative;
     background-size: 50%;
     background-repeat: repeat;
 }
 .container {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    position: relative;
+    /* position: relative; */
     text-align: center;
     /* transform: translate(-50%, -50%); */
 }
@@ -34,8 +32,10 @@ h1 {
     background-image: url("media/formbg.jpg");
     width: 700px;
     height: 160px;
+    /* width: 700px;
+    height: 160px;
     position: absolute;
-    left: 200px;
+    left: 200px; */
 }
 .noteText, #noteText {
     font-family: 'Open Sans', sans-serif;
@@ -48,7 +48,7 @@ h1 {
 #notes {
     display: flex;
     flex-flow: row wrap;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-left: 10px;
     height: 350px;
 }
@@ -68,7 +68,6 @@ h1 {
     outline: none;
     color: #000;
 }
-/*Styles for the note img*/
 .note {
     display: block;
     position: relative;
@@ -78,20 +77,19 @@ h1 {
     background-size: cover;
 }
 .new-note {
-    animation: fadeIn 0.5s;
+    animation: fadeIn 0.7s;
   }
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-/*Styles for text in the note*/
+
 .note > .noteText {
     position: absolute;
     top: 40px;
     left: 10px;
     width: 200px;
 }
-/*Styles for date and time in note*/
 .note > .date {
     box-sizing: border-box;
     box-shadow: inset 0px 0px 100px 5px rgb(255, 236, 112);

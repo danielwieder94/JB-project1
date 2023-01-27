@@ -23,7 +23,7 @@ const insertData = () => {
     })
     .join(""); //to make sure all array elements will show. without join.("") it would show only the first element of the array
 };
-//delete note function
+
 const deleteItem = (element, index) => {
   element.parentNode.remove();
   noteArray.splice(index, 1);
@@ -43,5 +43,5 @@ const addNote = () => {
   insertData();
   const lastAddedNote = document.querySelector(".note:last-of-type");
   lastAddedNote.classList.add("new-note");
-  setTimeout(() => lastAddedNote.classList.remove("new-note"), 500);
+  setTimeout(() => lastAddedNote.classList.remove("new-note"), 700);
 };
